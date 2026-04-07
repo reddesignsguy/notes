@@ -16,3 +16,7 @@ _**cmake**_
   - in the top left of Photopea, switching the drop down from path to shape doesn't do anything.
     - photoshop might treat both types of data the same internally
     - however, changing the color fill data does make a difference to the psd spec
+  - Path Resource Format
+    - Initial fill rule record (08)
+    - The 2 bytes after the selector bytes, 00 08, are either 00 01 or 00 00. If it's 00 01, then it will "invert" the mask such that everything inside is hidden and everything outside is shown.
+      - For some reason, I'm seeing this inversion at times for the resulting file of a round-trip write.  
