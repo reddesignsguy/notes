@@ -19,4 +19,10 @@ _**cmake**_
   - Path Resource Format
     - Initial fill rule record (08)
     - The 2 bytes after the selector bytes, 00 08, are either 00 01 or 00 00. If it's 00 01, then it will "invert" the mask such that everything inside is hidden and everything outside is shown.
-      - For some reason, I'm seeing this inversion at times for the resulting file of a round-trip write.  
+      - For some reason, I'm seeing this inversion at times for the resulting file of a round-trip write.
+  - A shape's color fill depends on 8BIMSoCo or solid color thingy (listed in PSD spec)
+    - Hex data with a RED solid color fill <img width="764" height="252" alt="image" src="https://github.com/user-attachments/assets/ce17c048-f617-4652-960f-202699d7be26" />
+
+    - Hex data with a BLUE solid color fill (note the differences in highlighted cells) <img width="753" height="248" alt="image" src="https://github.com/user-attachments/assets/bd02fbe4-cc60-4ed8-bfd8-6d751bf4a6bd" />
+
+
