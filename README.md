@@ -25,4 +25,9 @@ _**cmake**_
 
     - Hex data with a BLUE solid color fill (note the differences in highlighted cells) <img width="753" height="248" alt="image" src="https://github.com/user-attachments/assets/bd02fbe4-cc60-4ed8-bfd8-6d751bf4a6bd" />
 
-
+**c++**
+- spans
+  - a "view" of a contiguous sequence of items
+  - lightweight, no overhead of copying underlying data
+  - is NON-owning, can lead to segfaults/bad mem access
+  - is this pretty much a pointer except the "API" is a container?
