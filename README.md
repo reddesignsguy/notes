@@ -12,7 +12,7 @@ _**cmake**_
     - specify the vcpkg tool chain file "vcpkg.cmake" and do so via -DCMAKE_TOOLCHAIN_FILE flag
     - command: cmake -S . --build build -DCMAKE_TOOLCHAIN_FILE="etc"
 
-- **_photoshop PSD spec_**
+**_photoshop PSD spec_**
   - in the top left of Photopea, switching the drop down from path to shape doesn't do anything.
     - photoshop might treat both types of data the same internally
     - however, changing the color fill data does make a difference to the psd spec
@@ -25,6 +25,7 @@ _**cmake**_
 
     - Hex data with a BLUE solid color fill (note the differences in highlighted cells) <img width="753" height="248" alt="image" src="https://github.com/user-attachments/assets/bd02fbe4-cc60-4ed8-bfd8-6d751bf4a6bd" />
 
+  - channel image data size scales with bounding box surrounding any of the rgb channels
 **c++**
 - spans
   - a "view" of a contiguous sequence of items
